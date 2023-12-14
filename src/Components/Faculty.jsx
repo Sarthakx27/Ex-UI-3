@@ -1,7 +1,26 @@
-import React from "react";
-import Carousel from "react-elastic-carousel";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const Faculty = () => {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
   return (
     <div>
       <div className="w-full font-display py-10">
@@ -139,20 +158,23 @@ const Faculty = () => {
           </div>
           {/* Carosoul */}
 
-          <h1 className="w-9/12 text-3xl font-bold text-start mb-16">Get The University of Arizona Advantage</h1>
+          <h1 className="w-9/12 text-3xl font-bold text-start mb-16">
+            Get The University of Arizona Advantage
+          </h1>
 
-          <Carousel itemsToShow={3} >
-          <div className="mx-5 bg-purple-100 rounded-lg h-[28rem] pb-12">
+          <Carousel responsive={responsive}>
+            <div className="mx-5 bg-purple-100 rounded-lg h-[28rem] pb-12">
               <img
                 className=" w-full mx-auto rounded-xl"
                 src="https://d1vwxdpzbgdqj.cloudfront.net/arizona-ms/on-campus.jpg"
                 alt="..."
               />
               <h1 className=" text-xl text-gray-700 font-semibold text-start p-5">
-              On-Campus Experience
+                On-Campus Experience
               </h1>
               <p className=" text-sm text-gray-800 text-start pl-5 leading-6 tracking-wide">
-              Interact with outstanding faculty and global peers at the University of Arizona campus in Chandler, Arizona. 
+                Interact with outstanding faculty and global peers at the
+                University of Arizona campus in Chandler, Arizona.
               </p>
             </div>
             <div className="mx-5 bg-purple-100 rounded-lg h-[28rem] pb-12">
@@ -162,10 +184,12 @@ const Faculty = () => {
                 alt="..."
               />
               <h1 className=" text-xl text-gray-700 font-semibold text-start p-5">
-              Bear Down Network
+                Bear Down Network
               </h1>
               <p className=" text-sm text-gray-800 text-start pl-5 leading-6 tracking-wide">
-              Get access to the online directory of The University of Arizona alumni with features like job board, mentorship opportunities, and much more. 
+                Get access to the online directory of The University of Arizona
+                alumni with features like job board, mentorship opportunities,
+                and much more.
               </p>
             </div>
             <div className="mx-5 bg-purple-100 rounded-lg h-[28rem] pb-12">
@@ -175,10 +199,11 @@ const Faculty = () => {
                 alt="..."
               />
               <h1 className=" text-xl text-gray-700 font-semibold text-start p-5">
-              Wildcat Mentor Society
+                Wildcat Mentor Society
               </h1>
               <p className=" text-sm text-gray-800 text-start pl-5 leading-6 tracking-wide">
-              Join transformative program to build strong professional network and get guidance from mentors. 
+                Join transformative program to build strong professional network
+                and get guidance from mentors.
               </p>
             </div>
             <div className="mx-5 bg-purple-100 rounded-lg h-[28rem] pb-12">
@@ -188,10 +213,11 @@ const Faculty = () => {
                 alt="..."
               />
               <h1 className=" text-xl text-gray-700 font-semibold text-start p-5">
-              Graduate Center
+                Graduate Center
               </h1>
               <p className=" text-sm text-gray-800 text-start pl-5 leading-6 tracking-wide">
-              A reliable resource for graduate and postdoctoral learners to enhance their academic and professional success. 
+                A reliable resource for graduate and postdoctoral learners to
+                enhance their academic and professional success.
               </p>
             </div>
             <div className="mx-5 bg-purple-100 rounded-lg h-[28rem] pb-12">
@@ -201,10 +227,11 @@ const Faculty = () => {
                 alt="..."
               />
               <h1 className=" text-xl text-gray-700 font-semibold text-start p-5">
-              Lifelab
+                Lifelab
               </h1>
               <p className=" text-sm text-gray-800 text-start pl-5 leading-6 tracking-wide">
-              Personalized career guidance platform to help learners with resume-building, cover letters, LinkedIn profiles, and more. 
+                Personalized career guidance platform to help learners with
+                resume-building, cover letters, LinkedIn profiles, and more.
               </p>
             </div>
             <div className="mx-5 bg-purple-100 rounded-lg h-[28rem] pb-12">
@@ -214,14 +241,17 @@ const Faculty = () => {
                 alt="..."
               />
               <h1 className=" text-xl text-gray-700 font-semibold text-start p-5">
-              Handshake
+                Handshake
               </h1>
               <p className=" text-sm text-gray-800 text-start pl-5 leading-6 tracking-wide">
-              Official job board and campus interviewing system for learners to  access hiring opportunities, career prep resources, and communities. 
+                Official job board and campus interviewing system for learners
+                to access hiring opportunities, career prep resources, and
+                communities.
               </p>
             </div>
           </Carousel>
         </div>
+        
       </div>
     </div>
   );

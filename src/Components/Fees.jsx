@@ -1,6 +1,26 @@
 import React from "react";
-import Carousel from '@itseasy21/react-elastic-carousel';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 const Fees = () => {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   return (
     <>
       <div className="w-full font-display py-10 bg-orange-100 pb-10">
@@ -353,9 +373,11 @@ const Fees = () => {
                     placeholder="Work experience in years"
                   >
                     <option disabled={true} value="">
-                    Work experience in years
+                      Work experience in years
                     </option>
-                    <option value="College Student">Currently a college student</option>
+                    <option value="College Student">
+                      Currently a college student
+                    </option>
                     <option value="0 Years">0 Years</option>
                     <option value="<1 Year">{"<"}1 Year</option>
                     <option value="1-2 Years">1-2 Years</option>
@@ -388,133 +410,176 @@ const Fees = () => {
       {/* Browse Related Blogs */}
       <div className="w-full font-display py-16 pb-10">
         <div className="w-4/5 px-20 mx-auto">
-        <h1 className=" text-3xl font-bold text-start mb-10">Browse Related Blogs</h1>
+          <h1 className=" text-3xl font-bold text-start mb-10">
+            Browse Related Blogs
+          </h1>
 
-        <Carousel itemsToShow={4} >
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+          <Carousel responsive={responsive} arrows infinite autoPlay pauseOnHover autoPlaySpeed={3000} >
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/06/29123341/iStock-922512798.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/06/29123341/iStock-922512798.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                Top 5 Reasons to choose BBA
+                  Top 5 Reasons to choose BBA
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/04/25184855/iStock-157289996.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/04/25184855/iStock-157289996.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                Which course is better, MBA or PGDM?
+                  Which course is better, MBA or PGDM?
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/02/28184203/iStock-922512798.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/02/28184203/iStock-922512798.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                Leadership Theories that every manager must master in 2022
+                  Leadership Theories that every manager must master in 2022
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/14192834/iStock-915451034.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/14192834/iStock-915451034.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                MBA Salary in India| How much does an MBA Professional Earn?
+                  MBA Salary in India| How much does an MBA Professional Earn?
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/10185933/iStock-656121724.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/10185933/iStock-656121724.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                Top 7 Career Options after MBA in Marketing -2023
+                  Top 7 Career Options after MBA in Marketing -2023
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/06/30142614/social-media-1233873_1920.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/06/30142614/social-media-1233873_1920.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                What is Moment Marketing?
+                  What is Moment Marketing?
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/11/09105321/iStock-1182142882.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="	https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/11/09105321/iStock-1182142882.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                Importance of Digital Marketing for Businesses in 2023
+                  Importance of Digital Marketing for Businesses in 2023
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/06/25102855/iStock-1204099658-1.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2021/06/25102855/iStock-1204099658-1.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                The Fundamentals of Digital Marketing
+                  The Fundamentals of Digital Marketing
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/11/09105321/iStock-1182142882.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/11/09105321/iStock-1182142882.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                10 Types of Management Courses in India
+                  10 Types of Management Courses in India
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
                 </p>
               </div>
             </div>
-        <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
+            <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
-                <img className=" rounded-md" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/04/08134238/shutterstock_1139135546-1-1.jpg" alt="" />
+                <img
+                  className=" rounded-md"
+                  src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/04/08134238/shutterstock_1139135546-1-1.jpg"
+                  alt=""
+                />
               </div>
               <div className="ml-2 col-span-3">
                 <h1 className=" text-xs font-semibold text-gray-700 tracking-wide w-full">
-                Top 13 Email Marketing Tools in Industry | Free Email Marketing Tools
+                  Top 13 Email Marketing Tools in Industry | Free Email
+                  Marketing Tools
                 </h1>
                 <p className="py-2 text-sm  text-blue-700">
                   <a href="#">Learn more {">"}</a>
@@ -522,8 +587,8 @@ const Fees = () => {
               </div>
             </div>
           </Carousel>
-            </div></div>
-
+        </div>
+      </div>
     </>
   );
 };
