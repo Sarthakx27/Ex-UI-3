@@ -8,7 +8,8 @@ export default {
   theme: {
     fontFamily:{
       display: [ "Poppins", "sans-serif"]
-    }
+    },
   },
   plugins: [require('flowbite/plugin')],
+  
 }

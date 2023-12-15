@@ -23,7 +23,7 @@ const Faculty = () => {
 
   return (
     <div>
-      <div className="w-full font-display py-10">
+      <div className="w-full font-display py-16">
         <div className="w-9/12 px-20 mx-auto">
           <h1 className=" text-3xl font-bold text-start ">Meet the Faculty</h1>
           <p className=" py-5 text-sm tracking-wide text-gray-800">
@@ -162,7 +162,7 @@ const Faculty = () => {
             Get The University of Arizona Advantage
           </h1>
 
-          <Carousel responsive={responsive}>
+          <Carousel responsive={responsive} arrows infinite autoPlay pauseOnHover autoPlaySpeed={3000} >
             <div className="mx-5 bg-purple-100 rounded-lg h-[28rem] pb-12">
               <img
                 className=" w-full mx-auto rounded-xl"
