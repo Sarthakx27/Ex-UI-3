@@ -68,7 +68,7 @@ const Fees = () => {
               </li>
             </ul>
             <button
-              className=" mt-4 md:mt-0 lg:mt-0 flex items-center text-center justify-center gap-2 py-3 rounded-lg border-2 border-transparent text-white hover:border-blue-700 
+              className=" mt-4 md:mt-6 lg:mt-10 flex items-center text-center justify-center gap-2 py-3 rounded-lg border-2 border-transparent text-white hover:border-blue-700 
           font-semibold w-full md:w-1/2 lg:w-1/3 mx-auto tracking-wider hover:bg-transparent bg-blue-700 hover:text-blue-700 transition duration-500   "
             >
               Apply Now

@@ -14,7 +14,7 @@ const LandingHeader = () => {
           study abroad program.
         </p>
         <p className=" text-sm mb-6">Online + On-Campus in USA • 18 Months</p>
-        <div className="lg:flex flex-col-2 gap-2 lg:gap-4 w-full md:w-1/2 md:mr-auto md:ml-auto lg:mr-auto lg:w-11/12 mb-5">
+        <div className="lg:flex flex-col-2 gap-2 lg:gap-4 w-full md:w-1/2 md:mr-auto md:ml-auto lg:ml-0 lg:mr-auto lg:w-11/12 mb-5">
           <button className="rounded-lg lg:mb-0 mb-2 border-2 border-amber-400 text-blue-950  font-semibold w-full 
           tracking-wider py-3 hover:bg-transparent bg-amber-400 hover:text-yellow-500 transition duration-500 lg:text-base text-xs  ">
             Download Brochure
