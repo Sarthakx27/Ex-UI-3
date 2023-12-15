@@ -34,10 +34,12 @@ const Curriculum = () => {
   return (
     <>
       <div className="w-full font-display py-3">
-        <div className="w-9/12 px-20 mx-auto">
-          <h1 className=" text-3xl font-bold text-start ">Curriculum</h1>
+        <div className="w-11/12  md:w-9/12 lg:w-9/12 px-20 mx-auto">
+          <h1 className="text-center lg:text-start text-3xl font-bold ">
+            Curriculum
+          </h1>
           <div className=" py-5 flex gap-4">
-            <p className=" w-[80%] text-sm tracking-wide text-gray-800">
+            <p className="hidden lg:block w-[70%] text-sm tracking-wide text-gray-800">
               Pursue a MS in Business Analytics in the USA without a GRE or GMAT
               from Eller School at University of Arizona. This Masters in BA
               program lets you save 55+ Lakhs INR, get a 3-year STEM OPT visa,
@@ -51,7 +53,7 @@ const Curriculum = () => {
             </button>
           </div>
         </div>
-        <div className="w-8/12 pt-5 px-20 mx-auto">
+        <div className="lg:w-8/12 md:w-8/12 w-11/12 pt-5 lg:px-20 px-5 mx-auto">
           <h1 className="font-semibold text-xl mt-5 mb-4">
             Required Foundational Courses (12 units)
           </h1>
@@ -61,7 +63,7 @@ const Curriculum = () => {
             icon={<Icon id={1} open={open} />}
           >
             <AccordionHeader onClick={() => handleOpen(1)}>
-              <h1 className="text-base font-semibold text-gray-800">
+              <h1 className="text-base font-normal md:font-semibold lg:font-semibold text-gray-800">
                 Business Foundation (6 units)
               </h1>
             </AccordionHeader>
@@ -83,7 +85,7 @@ const Curriculum = () => {
             icon={<Icon id={2} open={open} />}
           >
             <AccordionHeader onClick={() => handleOpen(2)}>
-              <h1 className="text-base font-semibold text-gray-800">
+              <h1 className="text-base font-normal md:font-semibold text-gray-800">
                 Data and Analytics Foundation (6 units)
               </h1>
             </AccordionHeader>
@@ -105,62 +107,58 @@ const Curriculum = () => {
           </h1>
           <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
             <h1 className="text-base  text-gray-800">
-            Big Data Technologies (3)
+              Big Data Technologies (3)
             </h1>
           </div>
           <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
             <h1 className="text-base text-gray-800">
-            Data Mining for Business Intelligence (3)
+              Data Mining for Business Intelligence (3)
+            </h1>
+          </div>
+          <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
+            <h1 className="text-base  text-gray-800">Econometrics (3)</h1>
+          </div>
+          <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
+            <h1 className="text-base  text-gray-800">Data Visualization (3)</h1>
+          </div>
+          <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
+            <h1 className="text-base  text-gray-800">
+              Business Consulting (3)
             </h1>
           </div>
           <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
             <h1 className="text-base  text-gray-800">
-            Econometrics (3)
+              MSBA Elective Course 1* (3)
             </h1>
           </div>
           <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
             <h1 className="text-base  text-gray-800">
-            Data Visualization (3)
+              MSBA Elective Course 2* (3)
             </h1>
           </div>
-          <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
-            <h1 className="text-base  text-gray-800">
-            Business Consulting (3)
-            </h1>
-          </div>
-          <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
-            <h1 className="text-base  text-gray-800">
-            MSBA Elective Course 1* (3)
-            </h1>
-          </div>
-          <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
-            <h1 className="text-base  text-gray-800">
-            MSBA Elective Course 2* (3)
-            </h1>
-          </div>
-
 
           <h1 className="font-semibold text-xl mt-12 mb-4">
             *MSBA Elective Courses Include (Each class is 3 units)
           </h1>
           <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
             <h1 className="text-base  text-gray-800">
-            Optimization for Business
+              Optimization for Business
             </h1>
           </div>
           <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
             <h1 className="text-base text-gray-800">
-            Econometrics and Machine Learning
+              Econometrics and Machine Learning
             </h1>
           </div>
           <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
             <h1 className="text-base  text-gray-800">
-            Business Function Electives in Accounting, Marketing, or Financial Analytics
+              Business Function Electives in Accounting, Marketing, or Financial
+              Analytics
             </h1>
           </div>
           <div className=" bg-gray-200 px-7 py-6 my-3 rounded-lg">
             <h1 className="text-base  text-gray-800">
-            Additional Electives Available
+              Additional Electives Available
             </h1>
           </div>
         </div>

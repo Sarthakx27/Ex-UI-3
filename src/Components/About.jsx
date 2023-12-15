@@ -4,69 +4,69 @@ import { Carousel } from "flowbite-react";
 const About = () => {
   return (
 <>
-    <div className="w-full font-display py-10">
-      <div className=" w-1/2 mx-auto flex flex-row justify-between px-28">
+    <div className="w-full font-display pt-10 md:pt-20 lg:py-10">
+      <div className=" md:w-4/5 lg:w-1/2 mx-auto flex flex-col lg:flex-row justify-between md:px-28 lg:px-28">
         <div className="grid grid-row-2 place-items-center gap-5">
-          <h1 className="text-xl">Program Delivered by:</h1>
+          <h1 className="lg:text-xl text-xl md:text-3xl font-semibold lg:font-normal">Program Delivered by:</h1>
           <img
-            className="w-2/3"
+            className="md:w-2/3 lg:w-2/3 w-1/2"
             src="	https://d1vwxdpzbgdqj.cloudfront.net/images/arizona_page/eller_collage_logo.png"
             alt=""
           />
         </div>
         <div className="grid grid-row-2 place-items-center gap-5">
-          <h1 className=" text-xl">In Collaboration with:</h1>
+        <h1 className="lg:text-xl text-xl md:text-3xl font-semibold lg:font-normal mt-8 lg:mt-0">In Collaboration with:</h1>
           <img
-            className="w-2/3"
+            className="lg:w-2/3 md:w-2/3 w-1/3 "
             src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/learning-partners/greatlearning-brand.svg"
             alt=""
           />
         </div>
       </div>
-      <div className="w-1/2 mx-auto mt-16 grid grid-cols-4 place-items-center gap-3">
-        <div className="grid h-56 gap-4 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-5 py-4">
+      <div className="lg:w-1/2 w-10/12 mx-auto mt-16 grid grid-cols-2 lg:grid-cols-4 place-items-center gap-3">
+        <div className="grid h-[14rem] md:h-[16rem] lg:h-[15rem] w-[11rem] md:w-[17rem] lg:w-[14rem] gap-4 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-5 py-4">
           <img
             className="w-1/3"
             src="https://d1vwxdpzbgdqj.cloudfront.net/arizona-ms/news-us.jpg"
             alt=""
           />
-          <h1 className=" font-semibold text-gray-800 text-sm">
+          <h1 className=" font-semibold text-gray-800 text-xs md:text-sm lg:text-sm">
             Top 10 Public Graduate Business Analytics Program
           </h1>
           <p className=" text-xs">U.S. News & World Report</p>
           <p className=" text-xs">2023</p>
         </div>
-        <div className="grid h-56 gap-4 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-5 py-4">
+        <div className="grid h-[14rem] md:h-[16rem] lg:h-[15rem] w-[11rem] md:w-[17rem] lg:w-[14rem] gap-4 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-5 py-4">
           <img
             className="w-1/3"
             src="https://d1vwxdpzbgdqj.cloudfront.net/arizona-ms/news-us.jpg"
             alt=""
           />
-          <h1 className=" font-semibold text-gray-800 text-sm">
+          <h1 className=" font-semibold text-gray-800 text-xs md:text-sm lg:text-sm">
             #53 in Best Business Schools
           </h1>
           <p className=" text-xs">U.S. News & World Report</p>
           <p className=" text-xs">2023</p>
         </div>
-        <div className="grid h-56 gap-4 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-5 py-4">
+        <div className="grid h-[14rem] md:h-[16rem] lg:h-[15rem] w-[11rem] md:w-[17rem] lg:w-[14rem] gap-4 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-5 py-4">
           <img
             className="w-1/3"
             src="https://d1vwxdpzbgdqj.cloudfront.net/arizona-ms/us-news.jpg"
             alt=""
           />
-          <h1 className=" font-semibold text-gray-800 text-sm">
+          <h1 className=" font-semibold text-gray-800 text-xs md:text-sm lg:text-sm">
             Top 100 Global University
           </h1>
           <p className=" text-xs">U.S. News & World Report</p>
           <p className=" text-xs">2021</p>
         </div>
-        <div className="grid h-56 gap-4 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-5 py-4">
+        <div className="grid h-[14rem] md:h-[16rem] lg:h-[15rem] w-[11rem] md:w-[17rem] lg:w-[14rem] gap-4 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-5 py-4">
           <img
             className="w-1/2"
             src="https://d1vwxdpzbgdqj.cloudfront.net/arizona-ms/cwur.jpg"
             alt=""
           />
-          <h1 className=" font-semibold text-gray-800 text-sm">
+          <h1 className=" font-semibold text-gray-800 text-xs md:text-sm lg:text-sm">
             Top 0.47% Worldwide University
           </h1>
           <p className=" text-xs">Center for World University Rankings</p>
@@ -76,13 +76,13 @@ const About = () => {
 
       {/* WHY CHOOSE US? */}
 
-      <div className=" w-1/2 mx-auto flex flex-col justify-center text-center mt-24">
+      <div className="w-11/12 md:w-4/5 lg:w-1/2 mx-auto flex flex-col justify-center text-center mt-24 ">
         <h1 className="text-3xl font-semibold">
           Why Choose this Master of Science in Business Analytics?
         </h1>
-        <div className="grid grid-flow-col gap-3 mt-16">
-          <div className="grid h-96 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-8 py-4 bg-blue-100">
-            <h1 className=" text-xl font-semibold text-gray-800 pb-5">
+        <div className="grid lg:w-full md:w-8/12 md:mx-auto lg:grid-flow-col gap-3 mt-16">
+          <div className="grid md:h-[20rem] lg:h-[24rem] border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-8 py-4 bg-blue-100">
+            <h1 className="text-xl font-semibold text-gray-800 lg:pb-5">
               Hybrid Format
             </h1>
             <ul className=" text-sm text-start leading-6 list-disc pl-3 text-gray-800">
@@ -98,7 +98,7 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <div className="grid h-96 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-8 py-4 bg-indigo-200">
+          <div className="grid md:h-[20rem] lg:h-[24rem] border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-8 py-4 bg-indigo-200">
             <h1 className=" text-xl font-semibold text-gray-800 pb-5">
               Learn from World-Class Faculty
             </h1>
@@ -114,7 +114,7 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <div className="grid h-96 border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-8 py-4 bg-violet-200">
+          <div className="grid md:h-[20rem] lg:h-[24rem] border-2 rounded-lg shadow-lg hover:translate-y-2 duration-500 place-items-center text-center px-8 py-4 bg-violet-200">
             <h1 className=" text-xl font-semibold text-gray-800 pb-5">
               Practical, Hands-on Learning
             </h1>
@@ -133,16 +133,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className="rounded-xl w-1/2 mx-auto bg-[url('https://d1vwxdpzbgdqj.cloudfront.net/lc-download-brochure-banner.jpg')]">
-        <div className="rounded-xl flex flex-col justify-center text-center mt-24 gap-5 text-white   px-1 py-7 bg-blue-700 bg-opacity-80">
-          <h1 className=" w-5/6 mx-auto text-2xl font-semibold">
+      <div className="rounded-xl  w-11/12 md:w-4/5 lg:w-1/2 mx-auto bg-[url('https://d1vwxdpzbgdqj.cloudfront.net/lc-download-brochure-banner.jpg')]">
+        <div className="rounded-xl flex flex-col justify-center text-center mt-16 lg:mt-24 gap-5 text-white   px-1 py-7 bg-blue-700 bg-opacity-80">
+          <h1 className=" w-5/6 mx-auto md:text-2xl lg:text-2xl text-lg md:font-semibold lg:font-semibold">
             Earn Master’s degree from One of the Top 100 Global Universities in
             the World, University of Arizona.
           </h1>
           <p>Online + On-Campus in USA • 18 Months</p>
           <button
             className=" flex items-center text-center justify-center gap-2 rounded-lg border-2 border-transparent text-black hover:border-white 
-          font-semibold w-60 mx-auto tracking-wider py-3 hover:bg-transparent bg-white hover:text-white transition duration-500   "
+          font-semibold md:w-60 lg:w-60 w-52 mx-auto text-xs md:text-base lg:text-base tracking-wider py-3 hover:bg-transparent bg-white hover:text-white transition duration-500   "
           >
             Download Brochure
             <img
@@ -155,11 +155,11 @@ const About = () => {
 
       {/* TOP RECRUTIERS */}
 
-      <div className=" w-1/2 mx-auto rounded-xl flex flex-col justify-center text-center mt-24 gap-5 py-7">
-        <h1 className="text-3xl font-bold">
+      <div className=" w-11/12 md:w-4/5 lg:w-1/2 mx-auto rounded-xl flex flex-col justify-center text-center mt-10 md:mt-24 lg:mt-24 gap-5 py-7">
+        <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold">
           Top Recruiters that hire from University of Arizona
         </h1>
-        <div className="grid grid-cols-6  gap-4 mt-16 place-items-center">
+        <div className="w-9/12 mx-auto lg:w-full grid grid-cols-2 lg:grid-cols-6  gap-4 mt-1 md:mt-16 lg:mt-16 place-items-center">
           <img
             src="https://d1vwxdpzbgdqj.cloudfront.net/dms/google.png"
             alt=""
@@ -213,11 +213,11 @@ const About = () => {
 
       {/* @WORLD CLAS CAMPUS */}
 
-      <div className=" w-full mx-auto rounded-xl flex flex-col justify-center text-center mt-24 gap-5 py-7">
-        <h1 className="text-3xl font-bold">
+      <div className=" w-full mx-auto rounded-xl flex flex-col justify-center text-center mt-5 md:mt-5 lg:mt-24 gap-5 lg:py-7">
+      <h1 className="md:text-3xl lg:text-3xl text-2xl font-bold">
           Experience learning at a world-class campus
         </h1>
-        <div className="w-1/2 mx-auto px-36 h-[40rem] rounded-xl">
+        <div className=" w-11/12 md:w-4/5 lg:w-1/2 mx-auto lg:px-36 h-[40rem] rounded-xl">
           <Carousel pauseOnHover>
             <div>
               <img

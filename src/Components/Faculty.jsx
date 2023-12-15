@@ -23,16 +23,16 @@ const Faculty = () => {
 
   return (
     <div>
-      <div className="w-full font-display py-16">
-        <div className="w-9/12 px-20 mx-auto">
-          <h1 className=" text-3xl font-bold text-start ">Meet the Faculty</h1>
-          <p className=" py-5 text-sm tracking-wide text-gray-800">
+      <div className="w-full font-display pt-10 lg:py-10">
+        <div className="w-11/12 lg:w-9/12 px-10 lg:px-20 mx-auto">
+          <h1 className="text-center lg:text-start text-3xl font-bold">Meet the Faculty</h1>
+          <p className=" py-5 text-center lg:text-start text-sm tracking-wide text-gray-800">
             Learn from the esteemed faculty at University of Arizona and
             practicing Industry Professionals with immense experience in the
             field of Business Analytics.
           </p>
-          <div className="grid grid-cols-3 gap-5 place-items-center mt-3 mb-28">
-            <div className="grid grid-cols-3 shadow-md place-items-start h-[9rem] px-4 py-4 rounded-lg">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center mt-3 mb-16 lg:mb-28">
+            <div className="grid grid-cols-3 shadow-md place-items-start md:h-[9rem] lg:h-[9rem] px-4 py-4 rounded-lg">
               <img
                 className=" w-9/12 rounded-full row-span-2"
                 src="https://dtmvamahs40ux.cloudfront.net/public/faculties/faculties-3551559338-BGhosh.jpg"
@@ -42,12 +42,12 @@ const Faculty = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Bikram Ghosh
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 text-xs lg:text-sm  text-gray-700">
                   Associate Professor of Marketing, Eller Fellow
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 shadow-md place-items-start h-[9rem] px-4 py-4 rounded-lg">
+            <div className="grid grid-cols-3 shadow-md place-items-start md:h-[9rem] lg:h-[9rem] px-4 py-4 rounded-lg">
               <img
                 className=" w-9/12 rounded-full row-span-2"
                 src="	https://dtmvamahs40ux.cloudfront.net/public/faculties/faculties-274-JNielsen.jpg"
@@ -57,12 +57,12 @@ const Faculty = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Jesper Nielsen
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 text-xs lg:text-sm  text-gray-700">
                   Associate Professor of Marketing
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 shadow-md place-items-start h-[9rem] px-4 py-4 rounded-lg">
+            <div className="grid grid-cols-3 shadow-md place-items-start md:h-[9rem] lg:h-[9rem] px-4 py-4 rounded-lg">
               <img
                 className=" w-9/12 rounded-full row-span-2"
                 src="https://dtmvamahs40ux.cloudfront.net/public/faculties/faculties-275-EGisches.jpg"
@@ -72,13 +72,13 @@ const Faculty = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Eyran Gisches
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 text-xs lg:text-sm  text-gray-700">
                   Senior Lecturer in Management Information Systems Manager,
                   Organizational Behavior Laboratory
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 shadow-md place-items-start h-[9rem] px-4 py-4 rounded-lg">
+            <div className="grid grid-cols-3 shadow-md place-items-start md:h-[9rem] lg:h-[9rem] px-4 py-4 rounded-lg">
               <img
                 className=" w-9/12 rounded-full row-span-2"
                 src="https://dtmvamahs40ux.cloudfront.net/public/faculties/faculties-276-SSunder.jpg"
@@ -88,13 +88,13 @@ const Faculty = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Shyam Sunder
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 text-xs lg:text-sm  text-gray-700">
                   Director, Dhaliwal-Reidy School of Accountancy. Lou Myers
                   Professor of Accounting
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 shadow-md place-items-start h-[9rem] px-4 py-4 rounded-lg">
+            <div className="grid grid-cols-3 shadow-md place-items-start md:h-[9rem] lg:h-[9rem] px-4 py-4 rounded-lg">
               <img
                 className=" w-9/12 rounded-full row-span-2"
                 src="https://dtmvamahs40ux.cloudfront.net/public/faculties/faculties-277-MGHunter.jpg"
@@ -104,13 +104,13 @@ const Faculty = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   M. Grey Hunter
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 text-xs lg:text-sm  text-gray-700">
                   Senior Lecturer of Economics. Academic Director, MS Business
                   Analytics Program. Pre-Business Statistics Coordinator
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 shadow-md place-items-start h-[9rem] px-4 py-4 rounded-lg">
+            <div className="grid grid-cols-3 shadow-md place-items-start md:h-[9rem] lg:h-[9rem] px-4 py-4 rounded-lg">
               <img
                 className=" w-9/12 rounded-full row-span-2"
                 src="https://dtmvamahs40ux.cloudfront.net/public/faculties/faculties-278-TWoutersen.jpg"
@@ -120,12 +120,12 @@ const Faculty = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Tiemen Woutersen
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 text-xs lg:text-sm  text-gray-700">
                   Professor of Economics, Eller Fellow
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 shadow-md place-items-start h-[9rem] px-4 py-4 rounded-lg">
+            <div className="grid grid-cols-3 shadow-md place-items-start md:h-[9rem] lg:h-[9rem] px-4 py-4 rounded-lg">
               <img
                 className=" w-9/12 rounded-full row-span-2"
                 src="https://dtmvamahs40ux.cloudfront.net/public/faculties/faculties-279-CLamoureux.jpg"
@@ -135,12 +135,12 @@ const Faculty = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Christopher Lamoureux
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 text-xs lg:text-sm  text-gray-700">
                   Diamond Professor of Finance
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-3 shadow-md place-items-start h-[9rem] px-4 py-4 rounded-lg">
+            <div className="grid grid-cols-3 shadow-md place-items-start md:h-[9rem] lg:h-[9rem] px-4 py-4 rounded-lg">
               <img
                 className=" w-9/12 rounded-full row-span-2"
                 src="https://dtmvamahs40ux.cloudfront.net/public/faculties/faculties-280-SYoun.jpg"
@@ -150,15 +150,17 @@ const Faculty = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Seokjun Youn
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 text-xs lg:text-sm  text-gray-700">
                   Assistant Professor of Management Information Systems
                 </p>
               </div>
             </div>
           </div>
+
+
           {/* Carosoul */}
 
-          <h1 className="w-9/12 text-3xl font-bold text-start mb-16">
+          <h1 className="lg:w-9/12 w-11/12 text-2xl lg:text-3xl font-bold text-center lg:text-start mx-auto lg:mx-0 mb-16">
             Get The University of Arizona Advantage
           </h1>
 

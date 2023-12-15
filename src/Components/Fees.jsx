@@ -24,11 +24,11 @@ const Fees = () => {
   return (
     <>
       <div className="w-full font-display py-10 bg-orange-100 pb-10">
-        <div className="w-9/12 px-20 mx-auto">
-          <h1 className=" text-3xl font-bold text-center ">
+        <div className="w-11/12  md:w-9/12 lg:w-9/12 lg:px-20 mx-auto">
+          <h1 className=" text-2xl lg:text-3xl font-bold text-center ">
             Fees and Application Details
           </h1>
-          <div className=" text-center flex flex-col justify-center items-center align-middle mx-auto w-3/5 bg-white shadow-lg px-10 py-12 mt-12">
+          <div className=" text-center flex flex-col justify-center items-center align-middle mx-auto lg:w-3/5 bg-white shadow-lg px-10 py-6 md:py-12 lg:py-12 mt-12">
             <h1 className="text-xl font-semibold text-gray-700 mb-7">
               MASTER OF SCIENCE IN BUSINESS ANALYTICS
             </h1>
@@ -49,7 +49,7 @@ const Fees = () => {
               src="https://d1vwxdpzbgdqj.cloudfront.net/images/arizona_page/eller_collage_logo.png"
               alt=""
             />
-            <ul className=" text-base text-start leading-6 mb-7 list-disc pl-3 text-gray-800">
+            <ul className=" md:text-base lg:text-base text-sm text-start leading-6 list-disc pl-3 text-gray-800">
               <li className="py-2 tracking-wide">18 Months</li>
               <li className="py-2 tracking-wide">
                 Hybrid mode of learning with first 6 months online and next 12
@@ -68,8 +68,8 @@ const Fees = () => {
               </li>
             </ul>
             <button
-              className=" flex items-center text-center justify-center gap-2 py-3 rounded-lg border-2 border-transparent text-white hover:border-blue-700 
-          font-semibold w-1/3 mx-auto tracking-wider hover:bg-transparent bg-blue-700 hover:text-blue-700 transition duration-500   "
+              className=" mt-4 md:mt-0 lg:mt-0 flex items-center text-center justify-center gap-2 py-3 rounded-lg border-2 border-transparent text-white hover:border-blue-700 
+          font-semibold w-full md:w-1/2 lg:w-1/3 mx-auto tracking-wider hover:bg-transparent bg-blue-700 hover:text-blue-700 transition duration-500   "
             >
               Apply Now
             </button>
@@ -78,7 +78,7 @@ const Fees = () => {
             We provide flexible financing options through our finance partners,
             Gyandhan and Liquiloans.
           </p>
-          <div className="flex w-1/2 mx-auto gap-5 items-center justify-center align-middle">
+          <div className="flex lg:w-1/2 mx-auto gap-5 items-center justify-center align-middle">
             <img
               className=" w-1/4"
               src="https://d1vwxdpzbgdqj.cloudfront.net/srm-university/gyandhan.png"
@@ -95,8 +95,8 @@ const Fees = () => {
           <h1 className=" text-3xl mt-10 font-bold text-center mb-8">
             Application Process
           </h1>
-          <div className="grid grid-cols-4 gap-5 place-items-center mt-3 mb-5">
-            <div className="grid grid-cols-4 shadow-md place-items-start h-[11rem] px-4 py-4 rounded-lg bg-white">
+          <div className="grid lg:grid-cols-4 gap-5 place-items-center mt-3 mb-5">
+            <div className="grid grid-cols-4 shadow-md place-items-center lg:place-items-start h-[8rem] md:h-[9rem] lg:h-[11rem] px-4 lg:py-4 rounded-lg bg-white">
               <div className="px-5 py-3 items-center align-middle flex justify-center bg-blue-700 text-white rounded-full text-center">
                 1
               </div>
@@ -104,13 +104,13 @@ const Fees = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Apply Online
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 md:text-sm lg:text-sm text-xs  text-gray-700">
                   Complete filling a fast and easy online application form. No
                   additional tests or prerequisites are needed to apply.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-4 shadow-md place-items-start h-[11rem] px-4 py-4 rounded-lg bg-white">
+            <div className="grid grid-cols-4 shadow-md place-items-center lg:place-items-start h-[8rem] md:h-[9rem] lg:h-[11rem] px-4 lg:py-4 rounded-lg bg-white">
               <div className="px-5 py-3 items-center align-middle flex justify-center bg-blue-700 text-white rounded-full text-center">
                 2
               </div>
@@ -118,13 +118,13 @@ const Fees = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Pre-screening
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 md:text-sm lg:text-sm text-xs  text-gray-700">
                   Our team will make contact with you by phone to confirm your
                   eligibility for the program.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-4 shadow-md place-items-start h-[11rem] px-4 py-4 rounded-lg bg-white">
+            <div className="grid grid-cols-4 shadow-md place-items-center lg:place-items-start h-[8rem] md:h-[9rem] lg:h-[11rem] px-4 lg:py-4 rounded-lg bg-white">
               <div className="px-5 py-3 items-center align-middle flex justify-center bg-blue-700 text-white rounded-full text-center">
                 3
               </div>
@@ -132,13 +132,13 @@ const Fees = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Application Assessment
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 md:text-sm lg:text-sm text-xs  text-gray-700">
                   The Admissions team will assess your application and provide a
                   timely response.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-4 shadow-md place-items-start h-[11rem] px-4 py-4 rounded-lg bg-white">
+            <div className="grid grid-cols-4 shadow-md place-items-center lg:place-items-start h-[8rem] md:h-[9rem] lg:h-[11rem] px-4 lg:py-4 rounded-lg bg-white">
               <div className="px-5 py-3 items-center align-middle flex justify-center bg-blue-700 text-white rounded-full text-center">
                 4
               </div>
@@ -146,64 +146,65 @@ const Fees = () => {
                 <h1 className=" text-lg font-semibold text-gray-700 tracking-wide w-full">
                   Join The Program
                 </h1>
-                <p className="py-2 text-sm  text-gray-700">
+                <p className="py-2 md:text-sm lg:text-sm text-xs  text-gray-700">
                   If selected, you will receive an acceptance letter with
                   instructions on how to pay and join the program.
                 </p>
               </div>
             </div>
           </div>
-          <p className="py-2 text-sm  text-gray-700">
+          <p className="py-2 md:text-sm lg:text-sm text-xs text-center lg:text-start  text-gray-700">
             Great Learning provides end-to-end support in applying to the
             University of Arizona and also in the US visa application process
             during the first year.
           </p>
 
           {/* Who is this program for? */}
-          <h1 className=" text-3xl mt-24 font-bold text-start mb-8">
+          <h1 className=" md:text-3xl text-2xl lg:text-3xl mt-16 lg:mt-24 font-bold text-center lg:text-start mb-8">
             Who is this program for?
           </h1>
-          <div className="grid grid-cols-3 gap-5 place-items-center">
-            <div className="relative w-full">
+          <div className="grid lg:grid-cols-3 gap-5 place-items-center">
+            
+            <div className="relative w-9/12 h-[30rem] lg:h-auto lg:w-full">
               <img
                 className=" rounded-xl z-0"
                 src="https://d1vwxdpzbgdqj.cloudfront.net/arizona-ms/fresher.jpg"
                 alt=""
               />
-              <div className=" z-20 absolute top-1/2 left-1/4 bg-cyan-400 rounded-full w-12 h-12 flex items-center justify-center">
+              <div className=" z-20 absolute top-1/3 lg:top-1/2 left-1/4 bg-cyan-400 rounded-full w-12 h-12 flex items-center justify-center">
                 <img
                   src="https://d1vwxdpzbgdqj.cloudfront.net/aiml-pp-new/curated-jobs-icon.svg"
                   alt=""
                 />
               </div>
-              <div className=" z-10 bg-white rounded-xl absolute top-1/2 mt-5 py-10 px-5 left-1/4 shadow-md h-[20rem]">
+              <div className=" z-10 bg-white rounded-xl absolute top-1/3 lg:top-1/2 mt-5 py-10 px-5 left-1/4 shadow-md lg:h-[20rem]">
                 <h1 className="text-lg font-semibold text-gray-700">
                   Early Career Professionals
                 </h1>
-                <p className="mt-4">
+                <p className="mt-4 lg:text-base md:text-base text-sm">
                   Young, early-career professionals looking to go abroad and
                   master information-driven innovation with knowledge of the
                   latest information methods.
                 </p>
               </div>
             </div>
-            <div className="relative w-full">
+            <div className="relative w-9/12 h-[35rem] lg:h-auto lg:w-full">
               <img
                 className=" rounded-xl z-0"
                 src="https://d1vwxdpzbgdqj.cloudfront.net/arizona-ms/mid-lvl.jpg"
                 alt=""
               />
-              <div className=" z-20 absolute top-1/2 left-1/4 bg-green-400 rounded-full w-12 h-12 flex items-center justify-center">
+              <div className=" z-20 absolute top-1/3 lg:top-1/2 left-1/4 bg-green-400 rounded-full w-12 h-12 flex items-center justify-center">
                 <img
                   src="https://d1vwxdpzbgdqj.cloudfront.net/aifl-intl/professions-and-jobs.svg"
                   alt=""
                 />
               </div>
-              <div className=" z-10 bg-white rounded-xl absolute top-1/2 mt-5 py-10 px-5 left-1/4 shadow-md h-[20rem]">
+               <div className=" z-10 bg-white rounded-xl absolute top-1/3 lg:top-1/2 mt-5 py-10 px-5 left-1/4 shadow-md lg:h-[20rem]">
                 <h1 className="text-lg font-semibold text-gray-700">
                   Mid & Senior Level Professionals
                 </h1>
-                <p className="mt-4">
+                <p className="mt-4 lg:text-base md:text-base text-sm">
                   Mid and senior-level professionals who are looking to go
                   abroad or learn online and stay up-to-date with the latest
                   information management skills needed for success in the
@@ -211,23 +212,23 @@ const Fees = () => {
                 </p>
               </div>
             </div>
-            <div className="relative w-full">
+            <div className="relative w-9/12 h-[30rem] lg:h-auto lg:w-full">
               <img
                 className=" rounded-xl z-0"
                 src="https://d1vwxdpzbgdqj.cloudfront.net/aifl-intl/strategy_program_image.png"
                 alt=""
               />
-              <div className=" z-20 absolute top-1/2 left-1/4 bg-red-400 rounded-full w-12 h-12 flex items-center justify-center">
+              <div className=" z-20 absolute top-1/3 lg:top-1/2 left-1/4 bg-red-400 rounded-full w-12 h-12 flex items-center justify-center">
                 <img
                   src="https://d1vwxdpzbgdqj.cloudfront.net/aifl-intl/lead-icon.svg"
                   alt=""
                 />
               </div>
-              <div className=" z-10 bg-white rounded-xl absolute top-1/2 mt-5 py-10 px-5 left-1/4 shadow-md h-[20rem]">
+               <div className=" z-10 bg-white rounded-xl absolute top-1/3 lg:top-1/2 mt-5 py-10 px-5 left-1/4 shadow-md lg:h-[20rem]">
                 <h1 className="text-lg font-semibold text-gray-700">
                   Working Professionals
                 </h1>
-                <p className="mt-4">
+                <p className="mt-4 lg:text-base md:text-base text-sm">
                   Professionals who wish to learn online without quitting their
                   job and transition to an information management career with
                   industry-ready skills and knowledge.
@@ -237,25 +238,25 @@ const Fees = () => {
           </div>
 
           {/* DEADLINE */}
-          <div className="mt-72 flex justify-between">
-            <div className="w-1/2">
-              <h1 className="text-3xl font-bold text-start mb-8">
+          <div className="lg:mt-72 mt-20 flex lg:flex-row flex-col justify-between">
+            <div className="lg:w-1/2">
+              <h1 className="lg:text-3xl md:text-3xl text-2xl font-bold text-center lg:text-start mb-8">
                 Upcoming Application Deadline
               </h1>
-              <p className="py-2 text-sm  text-gray-700 tracking-wider">
+              <p className="py-2 text-sm text-center lg:text-start text-gray-700 tracking-wider">
                 Our admissions close once the requisite number of participants
                 enroll for the upcoming batch . Apply early to secure your
                 seats.
               </p>
             </div>
-            <div className="w-1/3 mt-5">
+            <div className="lg:w-1/3 mt-5">
               <button
                 className=" flex items-center text-center justify-center gap-2 py-3 rounded-lg border-2 border-transparent text-white hover:border-blue-700 
           font-semibold w-1/2 mx-auto tracking-wider hover:bg-transparent bg-blue-700 hover:text-blue-700 transition duration-500   "
               >
                 Apply Now
               </button>
-              <h1 className=" text-xl text-center mt-2 font-bold mb-8">
+              <h1 className=" lg:text-xl text-center mt-4 lg:mt-2 font-bold mb-8">
                 Deadline: 20th Dec 2023
               </h1>
             </div>
@@ -265,11 +266,11 @@ const Fees = () => {
 
       {/* BATCH START DATE */}
 
-      <div className="w-full font-display py-16 pb-10">
+      <div className="w-full font-display py-10 lg:py-16 pb-10">
         <div className="w-9/12 mx-auto">
-          <h1 className=" text-3xl font-bold text-center ">Batch Start Date</h1>
-          <div className="w-1/2 mx-auto">
-            <div className="w-1/3 mx-auto flex flex-col justify-center align-middle items-center border-2 border-gray-500 rounded-md mt-10 py-7">
+          <h1 className=" lg:text-3xl md:text-3xl text-2xl font-bold text-center ">Batch Start Date</h1>
+          <div className="lg:w-1/2 mx-auto">
+            <div className="lg:w-1/3 md:w-1/2 mx-auto flex flex-col justify-center align-middle items-center border-2 border-gray-500 rounded-md mt-10 py-7">
               <img
                 src="https://d1vwxdpzbgdqj.cloudfront.net/icons/cities/hybrid-format.svg"
                 alt=""
@@ -286,17 +287,17 @@ const Fees = () => {
       </div>
 
       {/* CONTACT US */}
-      <div className="w-full font-display py-16 pb-10 bg-blue-200">
-        <div className="w-4/5 px-20 mx-auto">
-          <div className="grid grid-cols-3 gap-3 place-items-start">
+      <div className="w-full font-display pt-10 pb-5 lg:pb-6 bg-blue-200">
+        <div className="lg:w-4/5 md:px-16 px-5 lg:px-20 mx-auto">
+          <div className="grid lg:grid-cols-3 gap-3 place-items-start">
             <div>
-              <h1 className=" text-3xl font-bold text-start ">
+              <h1 className=" text-3xl font-bold text-center lg:text-start ">
                 Still have queries?
               </h1>
-              <h1 className=" text-3xl font-bold text-start my-3 ">
+              <h1 className=" text-3xl font-bold text-center lg:text-start my-3 ">
                 Contact Us
               </h1>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-center lg:text-start lg:mb-0 mb-6">
                 Please fill in the form and an expert from the admissions office
                 will call you in the next 4 working hours. You can also reach
                 out to us at{" "}
@@ -315,14 +316,14 @@ const Fees = () => {
                 </span>
               </p>
             </div>
-            <div className="col-span-2 ml-10">
+            <div className="col-span-2 ml-5  lg:ml-10">
               <form className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 mb-8 place-items-center w-full gap-5">
                 <div className=" mb-5">
-                  <label htmlFor="name" className="block">
+                  <label htmlFor="name" className="block text-sm md:text-base lg:text-base">
                     Name
                   </label>
                   <input
-                    className="bg-gray-100 appearance-none border  border-gray-400  mt-2 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 w-4/5 md:w-3/4 lg:w-full"
+                    className="bg-gray-100 appearance-none border text-sm md:text-base lg:text-base border-gray-400  mt-2 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 w-11/12 md:w-3/4 lg:w-full"
                     type="text"
                     name="name" //name should me matched to state's name && name given in schema
                     placeholder="Name"
@@ -332,11 +333,11 @@ const Fees = () => {
                   />
                 </div>
                 <div className=" mb-5">
-                  <label htmlFor="email" className="block">
+                  <label htmlFor="email" className="block text-sm md:text-base lg:text-base">
                     E-mail
                   </label>
                   <input
-                    className="bg-gray-100 appearance-none border  border-gray-400  mt-2 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 w-4/5 md:w-3/4 lg:w-full"
+                    className="bg-gray-100 appearance-none border text-sm md:text-base lg:text-base border-gray-400  mt-2 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 w-11/12 md:w-3/4 lg:w-full"
                     type="text"
                     name="email"
                     placeholder="E-mail"
@@ -347,11 +348,11 @@ const Fees = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="mobilenumber" className="block">
+                  <label htmlFor="mobilenumber" className="block text-sm md:text-base lg:text-base">
                     Mobile Number
                   </label>
                   <input
-                    className="bg-gray-100 appearance-none border w-4/5 md:w-3/4 lg:w-full border-gray-400  mt-2 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-100 appearance-none border text-sm md:text-base lg:text-base w-11/12 md:w-3/4 lg:w-full border-gray-400  mt-2 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     type="number"
                     name="mobilenumber"
                     placeholder="Mobile Number"
@@ -361,12 +362,12 @@ const Fees = () => {
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="state" className="block">
+                <div className="md:pl-7">
+                  <label htmlFor="state" className="block text-sm md:text-base lg:text-base">
                     Work experience in years
                   </label>
                   <select
-                    className="bg-gray-100 appearance-none border w-4/5 md:w-3/4 lg:w-full border-gray-400  mt-2 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="bg-gray-100 appearance-none border text-sm md:text-base lg:text-base w-4/5 md:w-3/4 lg:w-full border-gray-400  mt-2 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     required
                     name="state"
                     id="state"
@@ -389,13 +390,13 @@ const Fees = () => {
                     <option value=">15 Years">{">"}15 Years</option>
                   </select>
                 </div>
-                <p className=" col-span-2 text-gray-700 text-center w-full text-sm">
+                <p className=" col-span-2 md:text-sm lg:text-sm text-gray-700 text-center w-full text-xs">
                   By submitting the form, you agree to our Terms and Conditions
                   and our Privacy Policy.
                 </p>
-                <div className="w-1/3 col-span-2">
+                <div className="lg:w-1/3 w-1/2 lg:mt-0 mt-4 col-span-2">
                   <button
-                    className=" flex items-center text-center justify-center gap-2 py-3 rounded-lg border-2 border-transparent text-white hover:border-blue-700 
+                    className=" flex items-center text-sm lg:text-base text-center justify-center gap-2 py-3 rounded-lg border-2 border-transparent text-white hover:border-blue-700 
           font-semibold w-full ml-auto tracking-wider hover:bg-transparent bg-blue-700 hover:text-blue-700 transition duration-500   "
                   >
                     Submit
@@ -408,13 +409,20 @@ const Fees = () => {
       </div>
 
       {/* Browse Related Blogs */}
-      <div className="w-full font-display py-16 pb-10">
-        <div className="w-4/5 px-20 mx-auto">
-          <h1 className=" text-3xl font-bold text-start mb-10">
+      <div className="w-full font-display py-10 lg:py-16 pb-10">
+        <div className="lg:w-4/5 px-10 lg:px-20 mx-auto">
+          <h1 className=" lg:text-3xl md:text-3xl text-2xl font-bold text-center lg:text-start mb-10">
             Browse Related Blogs
           </h1>
 
-          <Carousel responsive={responsive} arrows infinite autoPlay pauseOnHover autoPlaySpeed={3000} >
+          <Carousel
+            responsive={responsive}
+            arrows
+            infinite
+            autoPlay
+            pauseOnHover
+            autoPlaySpeed={3000}
+          >
             <div className="grid grid-cols-5 shadow-xl place-items-center h-[9rem] px-4 py-4 rounded-lg bg-white border mx-1">
               <div className="col-span-2 items-center align-middle flex justify-center">
                 <img
